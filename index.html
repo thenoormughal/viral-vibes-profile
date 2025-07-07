@@ -10,6 +10,14 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 
 </head>
 <body>
@@ -117,6 +125,143 @@
     </div>
   </div>
 </section>
+<!--Testimonials Session-->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-container">
+    <h2>What Our Clients Say</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- testimonial 1 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Viral Vibes turned our brand story into a digital masterpiece. Highly impressed!”</p>
+          <h4>John Doe, CEO, TechFlow</h4>
+        </div>
+
+        <!-- testimonial 2 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Amazing creative direction and strategy that delivered tangible growth.”</p>
+          <h4>Sarah Ali, Marketing Manager, RetailPro</h4>
+        </div>
+
+        <!-- testimonial 3 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“They handled our Shopify store setup seamlessly and boosted conversions.”</p>
+          <h4>Michael Smith, E-commerce Entrepreneur</h4>
+        </div>
+
+        <!-- testimonial 4 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“The Viral Vibes team is professional, responsive, and incredibly talented.”</p>
+          <h4>Ayesha Khan, Startup Founder</h4>
+        </div>
+
+        <!-- testimonial 5 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Their social media strategies grew our following exponentially.”</p>
+          <h4>Usman Raza, Social Media Head, TravelPoint</h4>
+        </div>
+
+        <!-- testimonial 6 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Absolutely stunning design work — our branding never looked better.”</p>
+          <h4>Zara Ahmed, Creative Director, StyleLine</h4>
+        </div>
+
+        <!-- testimonial 7 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“From ad campaigns to website optimization, they deliver consistent results.”</p>
+          <h4>Ali Hassan, Business Consultant</h4>
+        </div>
+
+        <!-- testimonial 8 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Smooth collaboration, transparent communication, and great outcomes.”</p>
+          <h4>Maria Sheikh, Project Manager</h4>
+        </div>
+
+        <!-- testimonial 9 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“Their growth-focused approach really sets them apart.”</p>
+          <h4>David Lee, Founder, HealthZone</h4>
+        </div>
+
+        <!-- testimonial 10 -->
+        <div class="swiper-slide testimonial-card">
+          <i class="fa-solid fa-quote-left"></i>
+          <p>“I’d recommend Viral Vibes to anyone looking for quality and creativity.”</p>
+          <h4>Fatima Noor, Entrepreneur</h4>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+<!-- Awards Section -->
+<section class="awards">
+  <div class="awards-container">
+    <h2>Our Sponsorships & Recognition</h2>
+    <div class="awards-cards">
+
+      <!-- Award 1 -->
+      <div class="award-card">
+        <img src="images/Silver-Sponser.jpg" alt="TEDx FAST 2024" class="award-image square" />
+        <h4>TEDx FAST University 2024</h4>
+        <p>We proudly sponsored TEDx FAST University 2024 as a <strong>Silver Sponsor</strong>, supporting innovation and youth leadership.</p>
+      </div>
+
+      <!-- Award 2 -->
+      <div class="award-card">
+        <img src="images/Gold-Sponser.jpg" alt="Bazm e Kamal 2024" class="award-image square " />
+        <h4>Bazm-e-Kamal 2024</h4>
+        <p>Honored to be the <strong>Gold Sponsor</strong> for Bazm-e-Kamal — a cultural celebration of creativity and excellence.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30, // adds gap between cards
+    loop: true,
+    centeredSlides: true, // ensures symmetry
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    }
+  });
+</script>
+
+
+
 
 
   <script src="script.js"></script>

@@ -235,18 +235,21 @@ body, html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
+  
 }
 
 .service-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 30px 20px;
   border-radius: 16px;
+  border: 2px solid #ffffff; /* White border */
   backdrop-filter: blur(4px);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 
 .service-card:hover {
   transform: translateY(-6px);
@@ -284,6 +287,203 @@ body, html {
   background: #64ccc5;
   color: #ffffff;
 }
+/*Testimonials Session*/
+.testimonials {
+  background: linear-gradient(135deg, #64ccc5, #022939);
+  padding: 80px 20px;
+  color: #fff;
+  position: relative; /* ✅ Required */
+}
+
+.testimonials-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.testimonials-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0; /* Add vertical space between rows */
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 2px solid #ffffff;
+  transition: transform 0.4s ease;
+  width: 90%;
+  max-width: 480px;
+  margin: 0 10px; /* horizontal spacing */
+  box-sizing: border-box;
+  
+  margin-bottom: 40px; /* Push card content upward */
+
+}
+
+.testimonial-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-card i {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+  font-size: 0.95rem;
+  color: #f0f0f0;
+}
+
+/* swiper override */
+.swiper-pagination-bullet {
+  background: #fff !important;
+}
+.swiper-pagination-bullet {
+  background: #ffffff99 !important;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+  opacity: 1;
+}
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0; /* Add vertical space between rows */
+  box-sizing: border-box;
+  align-items: stretch;
+  height: auto;
+}
+.swiper {
+  padding-bottom: 80px; /* space below swiper for pagination */
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;   /* 👈 yeh line important hai */
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+}
+/*Award Section*/
+.awards {
+  background: linear-gradient(135deg, #64ccc5, #022939);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.awards-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.awards-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.awards-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Make award cards taller */
+.award-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 2px solid #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto; /* Let content define height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.award-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.award-card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.award-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.award-card p {
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+.award-image {
+  width: 100%;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ffffff50;
+}
+.award-image.square:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* ✅ Square and perfect layout image */
+.award-image.square {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1 / 1; /* This makes it perfect square */
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #ffffff70;
+  margin-bottom: 15px;
+}
+
+
+
+
+
 
 
 
